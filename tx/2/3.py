@@ -31,7 +31,7 @@ class Solution:
         flag = True
         while q and flag:
             cnt += 1
-            for i in range(len(q)):
+            for _ in range(len(q)):
                 tmp = q.pop()
                 if not tmp:
                     flag = False
@@ -42,7 +42,7 @@ class Solution:
         cnt -= 1
         while cnt:
             t = len(qq)
-            for i in range(t):
+            for _ in range(t):
                 tmp = qq.pop()
                 if tmp.left:
                     qq.append(tmp.left)
