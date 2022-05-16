@@ -22,11 +22,12 @@ ccccb
 1≤n≤100000
 """
 
+
 # 不会做
 n = int(input())
 s = input()
-dp = [[0] * n for i in range(n)]
+dp = [[0] * n for _ in range(n)]
 # dp[m][n] = [n,m] 的子串是否符合要求
 for i in range(n):
-    for j in range(i, n):
+    for _ in range(i, n):
         ...

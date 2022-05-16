@@ -17,14 +17,12 @@
 n≤100000
 """
 
+
 # AC 91%
 n = input()
 line = input()
 cnt0 = line.count("0")  # On
 cnt1 = line.count("1")  # On
-# 0 变多，1 变少
-if cnt0 >= cnt1:
-    pass
 dic = {"0": "1", "1": "0"}
 if cnt0 < cnt1:
     line = "".join(dic[x] for x in line)  # On
